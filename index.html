@@ -76,13 +76,18 @@
     z-index: 100;
     background: var(--bg-nav);
     border-bottom: 1px solid rgba(255,255,255,0.07);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  }
+
+  .topnav-inner {
+    max-width: 1120px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 36px;
     height: 52px;
     gap: 24px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
   }
 
   .topnav-brand {
@@ -119,21 +124,34 @@
     white-space: nowrap;
   }
 
-  .topnav-links a:hover,
-  .topnav-links a.active {
+  .topnav-links a:hover {
     color: var(--nav-link-hover);
     background: rgba(255,255,255,0.06);
   }
 
   .topnav-links a.active {
     color: #fff;
-    background: rgba(255,255,255,0.12);
+    position: relative;
+  }
+
+  .topnav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 11px;
+    right: 11px;
+    height: 2px;
+    background: var(--nav-link-hover);
+    border-radius: 1px;
   }
 
   /* ── Layout wrapper ── */
   .layout {
     display: flex;
     flex: 1;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* ── Site footer ── */
@@ -250,7 +268,7 @@
   /* ── Main ── */
   .main {
     flex: 1;
-    padding: 52px 60px 88px;
+    padding: 52px 56px 88px;
     max-width: 860px;
   }
 
@@ -542,7 +560,7 @@
 
   /* ── Responsive ── */
   @media (max-width: 720px) {
-    .topnav { padding: 0 16px; height: 48px; }
+    .topnav-inner { padding: 0 16px; height: 48px; }
     .topnav-links { gap: 2px; }
     .topnav-links a { font-size: 0.68rem; padding: 4px 7px; }
     .layout { flex-direction: column; }
@@ -561,15 +579,18 @@
 
 <!-- ─── Top Nav ────────────────────────────────── -->
 <nav class="topnav" aria-label="Site navigation">
+  <div class="topnav-inner">
   <a class="topnav-brand" href="#">Sankar Behera</a>
   <ul class="topnav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#awards">Awards</a></li>
   </ul>
+  </div>
 </nav>
 
 <!-- ─── Layout ─────────────────────────────────── -->
