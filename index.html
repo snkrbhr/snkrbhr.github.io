@@ -652,7 +652,7 @@
   <section id="about">
     <h2 class="section-title">About Me</h2>
     <p class="about-text">
-      Advised by <a href="#">Dr. Yamuna Prasad</a> at <a href="https://www.iitjammu.ac.in">IIT Jammu</a>, my research targets two coupled bottlenecks in neural network compression: <em>calibration-domain bias</em> — pruning methods that depend on training data introduce privacy risk and distribution-shift vulnerability — and <em>memory overhead of coupled pruning pipelines</em>, where jointly scoring and pruning requires storing full-resolution activations, becoming infeasible at LLM scale. I show that intrinsic weight geometry (low-rank residual structure, spectral properties, latent manifold deviation) encodes sufficient information to identify redundant parameters <em>without</em> any calibration data. My work spans CNNs to 70B-parameter LLMs, unstructured to structured pruning, and extends to robustness in safety-critical medical imaging. Works published at <strong>EMNLP 2026</strong>, <strong>TMLR 2026</strong>, <strong>IJCNN 2025</strong>, and <strong>IEEE TCE 2026</strong>; under review at <strong>ICLR 2027</strong>.
+      Advised by <a href="#">Dr. Yamuna Prasad</a> at <a href="https://www.iitjammu.ac.in">IIT Jammu</a>, my research pursues two complementary threads in efficient and trustworthy deep learning. The first thread — <em>data-free neural network compression</em> — shows that intrinsic weight geometry (low-rank residual structure, NMF spectral properties, Johnson-Lindenstrauss projections) encodes sufficient information to identify redundant parameters <em>without</em> any calibration data, enabling structured pruning of LLMs such as LLaMA, OPT, Mistral, and Phi-2 at scales up to 70B parameters, as well as CNN architectures including ResNet, VGG, ConvNeXt, and ViT. The second thread — <em>adversarial robustness and model security</em> — develops probabilistic and behavioral defenses against model extraction attacks and adversarial inputs, including a session-level NMF-based query sanity-check framework targeting black-box theft of production models. Works published at <strong>EMNLP 2026</strong>, <strong>TMLR 2026</strong>, <strong>IJCNN 2025</strong>, and <strong>IEEE TCE 2026</strong>; under review at <strong>ICLR 2027</strong>.
     </p>
   </section>
 
@@ -662,12 +662,12 @@
 
       <div class="edu-item">
         <div>
-          <div class="edu-degree">Ph.D. in Computer Science &amp; Engineering &nbsp;<span style="font-weight:400;color:var(--text-secondary)">CGPA 9.1/10</span></div>
+          <div class="edu-degree">Ph.D. in Computer Science &amp; Engineering &nbsp;<span style="font-weight:400;color:var(--text-secondary)">CGPA 9.0/10</span></div>
           <div class="edu-institution">Indian Institute of Technology Jammu</div>
           <div class="edu-meta">
-            Thesis: <em>Exploiting Intrinsic Structure for Robust and Efficient Deep Learning</em><br>
+            Thesis: <em>Exploiting Intrinsic Structure for Robustness and Efficiency in Foundation Models</em><br>
             Advisor: Dr. Yamuna Prasad (Assistant Professor, Dept. of CSE, IIT Jammu)<br>
-            Pre-Synopsis: Sep 2026 &nbsp;·&nbsp; Expected: 2027
+            Pre-Synopsis: Oct 2026 &nbsp;·&nbsp; Expected: Jan 2027
           </div>
         </div>
         <div class="edu-date">2023 – Present<br>Jammu, India</div>
@@ -675,7 +675,7 @@
 
       <div class="edu-item">
         <div>
-          <div class="edu-degree">M.S. (Research) in Computer Science &amp; Engineering &nbsp;<span style="font-weight:400;color:var(--text-secondary)">CGPA 9.0/10</span></div>
+          <div class="edu-degree">M.Tech. (Research) in Computer Technology &nbsp;<span style="font-weight:400;color:var(--text-secondary)">CGPA 9.0/10</span></div>
           <div class="edu-institution">Indian Institute of Technology Jammu</div>
           <div class="edu-meta">
             Thesis: <em>Robust and Explainable Deep Learning for Medical Image Analysis</em><br>
@@ -732,6 +732,9 @@
           <div class="pub-title">LILA: Data-Free Structured Pruning of LLMs via NMF Spectral Geometry</div>
           <div class="pub-authors"><strong>S. Behera</strong>, D. Singh, A. Agnihotri, R.K. Choudhary, S. Ahlawat, Y. Prasad</div>
           <div class="pub-venue">Under Review — ICLR 2027</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2609.11163" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          </div>
         </div>
       </div>
 
@@ -740,9 +743,20 @@
         <div class="pub-thumb">In<br>Progress</div>
         <div>
           <span class="pub-venue-badge">In Progress</span>
-          <div class="pub-title">FastLILA: Johnson-Lindenstrauss Projections for Efficient Calibration-Free LLM Structured Pruning</div>
+          <div class="pub-title">FastLILA: Johnson-Lindenstrauss Projections for Scalable Data-Free Spectral LLM Pruning</div>
           <div class="pub-authors"><strong>S. Behera</strong>, Y. Prasad</div>
           <div class="pub-venue">In Progress</div>
+        </div>
+      </div>
+
+      <!-- SAND (In Progress) -->
+      <div class="pub-item">
+        <div class="pub-thumb">In<br>Progress<br>IEEE S&amp;P</div>
+        <div>
+          <span class="pub-venue-badge">In Progress</span>
+          <div class="pub-title">Stateful Query Sanity Check (SAND): Session-Level Model Extraction Defense via NMF Behavioral Analysis on Sliding Query Windows</div>
+          <div class="pub-authors"><strong>S. Behera</strong>, M.K. Gurve, Y. Prasad</div>
+          <div class="pub-venue">In Progress — Targeting IEEE Symposium on Security and Privacy (S&amp;P)</div>
         </div>
       </div>
 
@@ -754,6 +768,9 @@
           <div class="pub-title">SARATHI: Decoupled Data-Free Probing and Adaptive Reconstruction for Structured LLM Pruning</div>
           <div class="pub-authors"><strong>S. Behera</strong>, D. Singh, S. Ahlawat, Y. Prasad</div>
           <div class="pub-venue">Empirical Methods in Natural Language Processing (EMNLP), 2026 — Main Conference</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2610.15514" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          </div>
         </div>
       </div>
 
@@ -776,7 +793,7 @@
         <div class="pub-thumb">IEEE TCE<br>Q1<br>2026</div>
         <div>
           <span class="pub-venue-badge">IEEE TCE</span>
-          <div class="pub-title">Probabilistic Defense Framework Against Data-Free Model Extraction Attacks using Transformer-Based OOD Detection</div>
+          <div class="pub-title">Probabilistic Defense Framework for Enhancing Model Security Against Extraction Attacks</div>
           <div class="pub-authors">M.K. Gurve, <strong>S. Behera</strong>, Lekhraj, C.S. Tyagi, A. Vidyarthi, Y. Prasad</div>
           <div class="pub-venue">IEEE Transactions on Consumer Electronics (TCE), Q1, 2026</div>
           <div class="pub-links">
@@ -892,9 +909,9 @@
       <div class="services-sub">
         <h4>Reviewing</h4>
         <ul>
+          <li>AAAI</li>
           <li>IJCNN</li>
-          <li>ACL Rolling Review (ARR)</li>
-          <li>ICLR</li>
+          <li>ACL</li>
         </ul>
       </div>
       <div class="services-sub">
@@ -906,10 +923,10 @@
           <li>Data Structures &amp; Algorithms, IIT Jammu</li>
         </ul>
       </div>
-<div class="services-sub">
-        <h4>Volunteering</h4>
+      <div class="services-sub">
+        <h4>Session Chair</h4>
         <ul>
-          <li>EMNLP 2026 Volunteer</li>
+          <li>EMNLP 2026 — Virtual Session Chair</li>
         </ul>
       </div>
     </div>
@@ -945,5 +962,5 @@
 </script>
 
 <footer class="site-footer">
-  © 2026 Sankar Behera &nbsp;·&nbsp; <a href="https://www.iitjammu.ac.in">IIT Jammu</a> &nbsp;·&nbsp; Last updated Sep 2026 &nbsp;·&nbsp; <a href="mailto:sankar.behera@iitjammu.ac.in">sankar.behera@iitjammu.ac.in</a>
+  © 2026 Sankar Behera &nbsp;·&nbsp; <a href="https://www.iitjammu.ac.in">IIT Jammu</a> &nbsp;·&nbsp; Last updated Oct 2026 &nbsp;·&nbsp; <a href="mailto:sankar.behera@iitjammu.ac.in">sankar.behera@iitjammu.ac.in</a>
 </footer>
